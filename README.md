@@ -4,7 +4,7 @@ The Football club uses [Titan Sensors](https://www.titansensor.com/) to collect 
 During this internship I was assigned the task of cleaning and analyzing the data, to create a presentable, summarized report for the team's coaches.
 
 The repo contains exmaples for the data received from one game:[1st Half](https://github.com/rotemarie/HJFC/blob/master/1st_Half.xlsx) and [2nd Half](https://github.com/rotemarie/HJFC/blob/master/2nd_Half.xlsx).
-As well as the final report: [summary](https://github.com/rotemarie/HJFC/blob/master/summery.xlsx)
+As well as the final report: [report](https://github.com/rotemarie/HJFC/blob/master/reportExample.pdf)
 
 The initial data comes separated to the 2 halves of the game and include many attributes that are not useful for the team.
 I read and combined all the data into one dataframe while verifying that no players' data is being overwritten or erased in case they only played one half.
@@ -166,3 +166,11 @@ def main_plotify (newData, db):
         for d in newData:
             plot(db, d, f, high, low)
 ```
+
+Short example of the final data after processing:
+![](https://github.com/rotemarie/HJFC/blob/master/summary.png)
+
+Example graphs:
+![](https://github.com/rotemarie/HJFC/blob/master/g1.png)
+![](https://github.com/rotemarie/HJFC/blob/master/g2.png)
+
