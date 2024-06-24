@@ -57,11 +57,11 @@ def verify_players(DB, lst):
     return db_new
 ```
 
-Then, to find the relevant data for the game, each attribute had to be treated differently as per the team's instructions: for some sttributes only a maximus value had to be found, for others, averages or sums, etc.
+Then, to find the relevant data for the game, each attribute had to be treated differently as per the team's instructions: for some attributes only a maximum value had to be found, for others, averages or sums, etc.
 Here are some examples to the processing of the data:
-def additive_values(lst, new_data):
 
 ```bash
+def additive_values(lst, new_data):
 #adds values of all data frames into the new df
     warnings.filterwarnings('ignore')
     for l in lst:
